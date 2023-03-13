@@ -1,57 +1,55 @@
+<!DOCTYPE html>
 <html>
-  <body>
-    <div class="system_name">
-      <h2>○○系統</h2>
-    </div>
-    
-    <div class="login_page">
-      <div id="container1">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>Starry Starry Night</title>
+    <script type="text/javascript" src="starry.js"></script>
+    <style type="text/css">
+        .style1, .style1 a {
+            color: #9acd32;
+        }
 
-        <div class="login">  
-          
-          <h3>登入 Login</h3>
+        .style2, .style2 a {
+            color: #3399ff;
+        }
 
-          <form action="用戶管理.php">
-            <input type="text" id="username" name="username" placeholder="帳號" required>
-            <div class="tab"></div>
-            <input type="text" id="password" name="password" placeholder="密碼" required>
-            <div class="tab"></div>
-            <input type="submit" value="登入" class="submit" onclick="location.href='https://codepen.io/rosewang0303/full/OQbLBv/'">
-          </form>  
-
-          <h5 onclick="show_hide()">註冊帳號</h5>
-          
-        </div><!-- login end-->
-      </div><!-- container1 end-->
-    </div><!-- login_page end-->
-    
-    <div class="signup_page"
-      <div id="container2">
-
-        <div class="signup">  
-          
-          <h3>註冊 Sign Up</h3>
-
-          <form action="用戶管理.php">
-            <input type="text" id="fullname" name="fullname" placeholder="使用者全名" required>
-            <div class="tab"></div>
-            <input type="text" id="username2" name="username" placeholder="帳號" required>
-            <div class="tab"></div>
-            <input type="text" id="password2" name="password" placeholder="密碼" required>
-            <div class="tab"></div>
-            <input type="text" id="comfirm_password" name="comfirm_password" placeholder="確認密碼" required>
-            <div class="tab"></div>            
-            <input type="submit" value="註冊" class="submit">
-          </form>  
-
-          <h5 onclick="show_hide()">登入帳號</h5>
-          
-        </div><!-- signup end-->
-      </div><!-- container2 end-->
-    </div><!-- signup_page end--> 
-
-    <div id="copyright">
-      <h4>Copyright © 2018 RoseWang All rights reserved</h4><!--因為js，會跑版--> 
-    </div>    
-  </body>
+        html, body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            text-align: center;
+            background: #000;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <canvas id="canvas">
+        <div class="style1">
+            <p>
+                <br><br><br><br><br>
+                Oops! Your browser does not support HTML 5 Canvas!<br>
+                You need a modern browser such as
+                <a href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html" target="_blank">Chrome</a>,
+                <a href="http://firefox.com.cn/" target="_blank">Firefox</a>,
+                <a href="http://www.opera.com/download/" target="_blank">Opera</a> or
+                <a href="http://windows.microsoft.com/zh-CN/internet-explorer/products/ie/home" target="_blank">IE9</a>
+                to view this!
+            </p>
+        </div>
+        <div class="style2">
+            <p><br>糟糕！您的浏览器不支持 HTML 5 Canvas!<br>
+                为了获得更好的体验效果，请试试
+                <a href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html" target="_blank">Chrome</a>,
+                <a href="http://firefox.com.cn/" target="_blank">Firefox</a>,
+                <a href="http://www.opera.com/download/" target="_blank">Opera</a> 或者
+                <a href="http://windows.microsoft.com/zh-CN/internet-explorer/products/ie/home" target="_blank">IE9</a>！
+            </p>
+        </div>
+    </canvas>
+</div>
+<script type="text/javascript">Starry.init();</script>
+</body>
 </html>
